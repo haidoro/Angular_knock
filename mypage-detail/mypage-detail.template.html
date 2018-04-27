@@ -1,0 +1,38 @@
+<div class="mypage-images">
+  <img ng-src="{{img}}" class="mypage"
+      ng-class="{selected: img === $ctrl.mainImageUrl}"
+      ng-repeat="img in $ctrl.mypage.images" />
+</div>
+
+<img ng-src="{{$ctrl.mypage.images[0]}}" class="mypage" />
+
+<h1>{{$ctrl.mypage.name}}</h1>
+
+<p>{{$ctrl.mypage.description}}</p>
+<img ng-src="{{$ctrl.mainImageUrl}}" class="mypage" />
+
+<ul class="mypage-thumbs">
+  <li ng-repeat="img in $ctrl.mypage.images">
+    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
+  </li>
+</ul>
+<ul class="specs">
+  <li>
+    <span>Availability and Networks</span>
+    <dl>
+      <dt>Availability</dt>
+      <dd ng-repeat="availability in $ctrl.mypage.availability">{{availability}}</dd>
+    </dl>
+  </li>
+  ...
+  <li>
+    <span>Additional Features</span>
+    <dd>{{$ctrl.mypage.additionalFeatures}}</dd>
+  </li>
+</ul>
+<dl>
+  <dt>Infrared</dt>
+  <dd>{{$ctrl.mypage.connectivity.infrared | checkmark}}</dd>
+  <dt>GPS</dt>
+  <dd>{{$ctrl.mypage.connectivity.gps | checkmark}}</dd>
+</dl>

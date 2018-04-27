@@ -19,14 +19,14 @@
     </div>
     <div class="col-md-10">
       <!--Body content-->
-<ul class="phones">
-  <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp"
-      class="thumbnail phone-list-item">
-    <a href="#!/phones/{{phone.id}}" class="thumb">
-      <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
+<ul class="mypage-thumbs">
+  <li ng-repeat="mypage in $ctrl.mypages | filter:$ctrl.query | orderBy:$ctrl.orderProp"
+      class="thumbnail mypage-list-item">
+    <a href="#!/mypages/{{mypage.id}}" class="thumb">
+      <img ng-src="{{mypage.imageUrl}}" alt="{{mypage.name}}" />
     </a>
-    <a href="#!/phones/{{phone.id}}">{{phone.name}}</a>
-    <p>{{phone.snippet}}</p>
+    <a href="#!/mypages/{{mypage.id}}">{{mypage.name}}</a>
+    <p>{{mypage.snippet}}</p>
   </li>
 </ul>
     </div>

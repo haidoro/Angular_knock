@@ -10,11 +10,11 @@ img{
     height:auto;
 }
 /* View: Phone list */
-.phones {
+.mypage {
   list-style: none;
 }
 
-.phones li {
+.mypage li {
   clear: both;
   height: 115px;
   padding-top: 15px;
@@ -29,7 +29,7 @@ img{
 }
 
 /* View: Phone detail */
-.phone {
+.mypage {
   background-color: white;
   border: 1px solid black;
   float: left;
@@ -39,7 +39,7 @@ img{
   padding: 2em;
   width: 400px;
 }
-.phone {
+.mypage {
   background-color: white;
   display: none;
   float: left;
@@ -50,11 +50,11 @@ img{
   width: 400px;
 }
 
-.phone:first-child {
+.mypage:first-child {
   display: block;
 }
 
-.phone-images {
+.mypage-images {
   background-color: white;
   float: left;
   height: 450px;
@@ -63,18 +63,18 @@ img{
   width: 450px;
 }
 
-.phone-thumbs {
+.mypage-thumbs {
   list-style: none;
   margin: 0;
 }
 
-.phone-thumbs img {
+.mypage-thumbs img {
   height: 100px;
   padding: 1em;
   width: 100px;
 }
 
-.phone-thumbs li {
+.mypage-thumbs li {
   background-color: white;
   border: 1px solid black;
   cursor: pointer;

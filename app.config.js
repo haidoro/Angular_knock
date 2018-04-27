@@ -1,16 +1,16 @@
 angular.
-  module('phonecatApp').
+  module('mypageApp').
   config(['$locationProvider', '$routeProvider',
     function config($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix('!');
 
       $routeProvider.
-        when('/phones', {
-          template: '<phone-list></phone-list>'
+        when('/mypages', {
+          template: '<mypage-list></mypage-list>'
         }).
-        when('/phones/:phoneId', {
-          template: '<phone-detail></phone-detail>'
+        when('/mypages/:mypageId', {
+          template: '<mypage-detail></mypage-detail>'
         }).
-        otherwise('/phones');
+        otherwise('/mypages');
     }
   ]);

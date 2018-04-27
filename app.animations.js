@@ -1,6 +1,6 @@
 angular.
-  module('phonecatApp').
-  animation('.phone', function phoneAnimationFactory() {
+  module('mypageApp').
+  animation('.mypage', function mypageAnimationFactory() {
     return {
       addClass: animateIn,
       removeClass: animateOut

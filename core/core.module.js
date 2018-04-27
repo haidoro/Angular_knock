@@ -1,1 +1,1 @@
-angular.module('core', ['core.phone']);
+angular.module('core', ['core.mypage']);
